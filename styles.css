@@ -1,0 +1,112 @@
+body {
+    font-family: 'Lobster', cursive;
+    background-color: #f3e5f5;
+    color: #4a148c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 32px;
+    color: #6a1b9a;
+}
+
+#currentDate {
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #7b1fa2;
+}
+
+button {
+    font-family: 'Fjalla One', sans-serif;
+    background-color: #ba68c8;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #ab47bc;
+    transform: scale(1.05);
+}
+
+#imageContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#dailyImage {
+    max-width: 100%;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 1s ease-in-out;
+}
+
+#description {
+    font-family: 'Righteous', cursive;
+    font-size: 18px;
+    margin-top: 15px;
+    color: #4e2a84;
+}
+
+.message {
+    font-family: 'Indie Flower', cursive;
+    font-size: 16px;
+    color: #d32f2f;
+    margin-top: 10px;
+}
+
+/* Responsividade para telas menores (como iPhone 13) */
+@media (max-width: 430px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    #currentDate {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    #description {
+        font-size: 16px;
+    }
+
+    #dailyImage {
+        max-height: 300px;
+    }
+}
